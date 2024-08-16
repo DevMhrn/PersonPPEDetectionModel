@@ -1,0 +1,11 @@
+# Number of classes
+nc: 1
+
+# List of class names
+names:
+  0: person
+
+# Paths to the datasets
+train: D:\Downloads\datasets\datasets\person_detection\train
+val: D:\Downloads\datasets\datasets\person_detection\val
+test: D:\Downloads\datasets\datasets\person_detection\test # Optional; include this if you have a test set

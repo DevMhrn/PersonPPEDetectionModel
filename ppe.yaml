@@ -1,0 +1,19 @@
+# Number of classes
+nc: 9
+
+# List of class names
+names:
+  0: hard-hat
+  1: gloves
+  2: mask
+  3: glasses
+  4: boots
+  5: vest
+  6: ppe-suit
+  7: ear-protector
+  8: safety-harness
+
+# Paths to the datasets
+train: /content/ppe_detection/train
+val: /content/ppe_detection/valid
+test: /content/ppe_detection/train
