@@ -43,6 +43,7 @@ pip install ultralytics opencv-python argparse lxml
 - This issue highlighted the importance of correct labeling for effective model performance.
 
 ### [Approach Doc](https://docs.google.com/document/d/1tld96ulpa4bboxbn4vVffRZV3me5BcoesNQqwI08WBI/edit?usp=sharing)
+#### [Video](https://www.loom.com/share/dd91fc9c29b7414e8afea3b6826acf2c?sid=bfbe0b78-7ddb-48dd-8bf2-5b0f38cda18a)
 
 ## Conclusion
 
