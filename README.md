@@ -5,7 +5,7 @@
 Before getting started, make sure you have the necessary packages installed. You can do this by running the following command:
 
 ```bash
-pip install ultralytics opencv-python argparse lxml
+pip install ultralytics opencv-python argparse lxml scikit-learn
 ```
 
 # Approach Documentation
