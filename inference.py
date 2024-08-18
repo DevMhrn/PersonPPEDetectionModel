@@ -27,13 +27,13 @@ def inference(input_dir, output_dir, person_model_path, ppe_model_path):
             confidence = person_bbox.conf[0]  # Person detection confidence
 
             # Draw bounding box and confidence score for person
-            cv2.rectangle(image, (int(xmin), int(ymin)), (int(xmax), int(ymax)), (255, 0, 0), 1)
+            cv2.rectangle(image, (int(xmin), int(ymin)), (int(xmax), int(ymax)), (255, 0, 0), 2)
             cv2.putText(image, f'Person: {confidence:.2f}', 
                         (int(xmin), int(ymin) - 10), 
                         cv2.FONT_HERSHEY_SIMPLEX, 
                         0.6, 
                         (255, 0, 0), 
-                        1)
+                        2)
 
             # Step 2: Crop the detected person region
             cropped_img = image[int(ymin):int(ymax), int(xmin):int(xmax)]
@@ -52,13 +52,13 @@ def inference(input_dir, output_dir, person_model_path, ppe_model_path):
                 cv2.rectangle(image, 
                               (int(xmin + pxmin), int(ymin + pymin)), 
                               (int(xmin + pxmax), int(ymin + pymax)), 
-                              (0, 255, 0), 2)
+                              (0, 0, 255), 2)
                 cv2.putText(image, f'{ppe_label}: {ppe_conf:.2f}', 
                             (int(xmin + pxmin), int(ymin + pymin) - 10), 
                             cv2.FONT_HERSHEY_SIMPLEX, 
-                            0.4, 
-                            (0, 255, 0), 
-                            1)
+                            0.6, 
+                            (0, 0, 255), 
+                            2)
 
         # Save the final image with detections to the output directory
         output_image_path = os.path.join(output_dir, image_file)
